@@ -1,0 +1,163 @@
+%!TEX TS-program = xelatex  
+%!TEX encoding = UTF-8 Unicode  
+
+\documentclass[12pt]{article}  
+\usepackage{geometry}  
+\geometry{letterpaper}  
+\usepackage{fancyhdr}
+\usepackage{extramarks}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{tikz}
+\usepackage[plain]{algorithm}
+\usepackage{algpseudocode} 
+
+\usepackage{xltxtra,fontspec,xunicode}
+\usepackage[slantfont,boldfont]{xeCJK}
+\setCJKmainfont{宋体}   
+\setmainfont{Optima}   
+\defaultfontfeatures{Mapping=tex-text}  
+
+\usepackage{xltxtra,fontspec,xunicode}
+\usepackage[slantfont,boldfont]{xeCJK}
+\setCJKmainfont{宋体}   
+\setmainfont{Optima}   
+\defaultfontfeatures{Mapping=tex-text}  
+
+\XeTeXlinebreaklocale “zh”  
+\XeTeXlinebreakskip = 0pt plus 1pt minus 0.1pt   
+ 
+\usepackage{listings}
+\usepackage{color}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+} 
+
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\linespread{1.1}
+
+\pagestyle{fancy}
+\lhead{\hmwkAuthorName \quad \hmwkStudentNumber}
+\rhead{\hmwkClass\ \quad \hmwkClassCode}
+\chead{\hmwkTitle}
+
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+
+\setlength\parindent{0pt}
+
+% Homework Details
+
+\newcommand{\hmwkTitle}{作业\ \#1}
+\newcommand{\hmwkDueDate}{2018.1.1}
+\newcommand{\hmwkClass}{课程名称}
+\newcommand{\hmwkClassCode}{课程编号}
+\newcommand{\hmwkClassInstructor}{课程教师}
+\newcommand{\hmwkAuthorName}{学生名}
+\newcommand{\hmwkStudentNumber}{学号}
+\newcommand{\hmwkStudentDepartment}{院系}
+
+%
+% Title Page
+%
+
+\title{
+    \vspace{1.5in}
+    \huge{\textmd{\textbf{\hmwkClass:\ \hmwkTitle}}}\\
+    \vspace{0.5in}\large{\hmwkClassInstructor\ \quad \hmwkClassCode}
+    \vspace{3in}
+}
+
+\author{{\hmwkStudentNumber} \\ \hmwkAuthorName \\ \hmwkStudentDepartment}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\pagebreak
+
+\section{第一题}
+\subsection{题目}
+中文支持：这个段落中，夹杂着一个word。
+\subsection{解答}
+支持代码高亮。
+\begin{lstlisting}
+// Hello.java
+import javax.swing.JApplet;
+import java.awt.Graphics;
+
+public class Hello extends JApplet {
+    public void paintComponent(Graphics g) {
+        g.drawString("Hello, world!", 65, 95);
+    }    
+}
+\end{lstlisting}
+
+也可以支持其他语言的高亮。
+% Change the default language
+\lstset{language=Python}
+
+\begin{lstlisting}
+# Hello.python
+print "Hello, world!"
+\end{lstlisting}
+
+输入数学公式
+
+$$F = ma$$
+
+插入图片
+
+\begin{figure}[htbp]
+\centering
+% Uncomment line below to insert a picture
+%\includegraphics{a.jpg}
+\caption{有图有真相}
+\label{fig:myphoto}
+\end{figure}
+
+插入表格
+
+\begin{center}
+\begin{tabular}{|l|c|r|}
+ \hline
+操作系统& 发行版& 编辑器\\
+ \hline
+Windows & MikTeX & TexMakerX \\
+ \hline
+Unix/Linux & teTeX & Kile \\
+ \hline
+Mac OS & MacTeX & TeXShop \\
+ \hline
+通用& TeX Live & TeXworks \\
+ \hline
+\end{tabular}
+\end{center}
+
+\end{document}  
+  
