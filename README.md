@@ -8,7 +8,7 @@ This directory contains a template for homework/lab/programming assignment repor
 
 - [x] language support: Chinese & English
 
-- [x] Mathjax to write beautiful formulas
+- [x] MathJax to write beautiful formulas
 
 Use **XeLatex** to compile the tex files.
 
